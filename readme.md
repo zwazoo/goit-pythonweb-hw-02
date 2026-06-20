@@ -1,14 +1,38 @@
-# ДЗ Тема: Основи технології  Docker
+# FastAPI Application
 
-Створіть віртуальне оточення то встановіть необхідні бібліотеки
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Запуск:
+## Run Locally
 
-```bash 
+```bash
 python main.py
 ```
 
+The application will be available at:
+
+```text
+http://localhost:8000
+```
+
+## Run with Docker
+
+Build and start the containers:
+
+```bash
+docker compose up --build
+```
+
+The application will be available at:
+
+```text
+http://localhost:8000
+```
+
+## Services
+
+- `app` — FastAPI application
+- `postgres` — PostgreSQL database
